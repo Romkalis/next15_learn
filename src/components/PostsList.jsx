@@ -8,31 +8,30 @@ import s from "./PostsList.module.css";
 
 const PostsList = ({modalIsVisible, onCloseModal}) => {
 
-  const [inputedText, setInputText] = useState("");
-  const [inputedName, setInputName] = useState("");
+  const [posts, setPosts] = useState([{
+    author: "Roman",
+    text: "Olololoee!!"
+  }])
 
-  const changeTextHandler = (evt) => {
-    setInputText(evt.target.value);
-  };
-  const changeNameHandler = (evt) => {
-    setInputName(evt.target.value);
-  };
-
+  const onPostSubmit = (name, text) => {
+    setPosts( prev => [...prev, {[name]: text}])
+  }
 
   return (
     <>
       <ul className={s.posts}>
-        <Post author={"Roman"} body={"says: OLOLOLOE!!!"} />
-        <Post author={inputedName} body={inputedText} />
+        {posts.map( post => <Post
+          author={post.author}
+          body={post.text}
+          key={post.text + post.author}
+        />)}
       </ul>
 
       {modalIsVisible &&
         <Modal onClose={onCloseModal}>
           <NewPost
-            inputedName={inputedName}
-            inputedText={inputedText}
-            changeNameHandler={changeNameHandler}
-            changeTextHandler={changeTextHandler}
+            onCancel={onCloseModal}
+            onPosted={onPostSubmit}
           />
         </Modal>
       }
