@@ -14,6 +14,7 @@ function NewPost({ onCancel,onPosted }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     onPosted(inputedName, inputedText)
+    onCancel()
   }
 
   return (
