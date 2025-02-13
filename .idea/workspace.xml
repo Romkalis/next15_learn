@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16bcec64-2bde-437f-ad96-f2e3b4d5e859" name="Changes" comment="Added buttons, refactored state in new post">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/starting-project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewPost.jsx" afterDir="false" />
+    <list default="true" id="16bcec64-2bde-437f-ad96-f2e3b4d5e859" name="Changes" comment="added simply server, useEffect &amp; changed saving to backend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PostsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostsList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/lis/Desktop/next/starting-project/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lis/Desktop/next/starting-project/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -77,6 +74,8 @@
       <workItem from="1739349768592" duration="15000" />
       <workItem from="1739349784249" duration="28000" />
       <workItem from="1739349814061" duration="8754000" />
+      <workItem from="1739451525204" duration="1124000" />
+      <workItem from="1739452660271" duration="4421000" />
     </task>
     <task id="LOCAL-00001" summary="Added buttons, refactored state in new post">
       <option name="closed" value="true" />
@@ -86,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739355073110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added changing, saving posts to localStorage, fix errors">
+      <option name="closed" value="true" />
+      <created>1739451594571</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739451594571</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added buttons, refactored state in new post" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added buttons, refactored state in new post" />
+    <MESSAGE value="added changing, saving posts to localStorage, fix errors" />
+    <MESSAGE value="added simply server, useEffect &amp; changed saving to backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="added simply server, useEffect &amp; changed saving to backend" />
   </component>
 </project>
