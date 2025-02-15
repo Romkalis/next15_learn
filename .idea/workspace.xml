@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16bcec64-2bde-437f-ad96-f2e3b4d5e859" name="Changes" comment="added simply server, useEffect &amp; changed saving to backend">
+    <list default="true" id="16bcec64-2bde-437f-ad96-f2e3b4d5e859" name="Changes" comment="added isLoading condition, state &amp; block">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PostsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostsList.jsx" afterDir="false" />
     </list>
@@ -16,6 +16,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Romkalis&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Romkalis/next15_learn.git&quot;,
+    &quot;accountId&quot;: &quot;b75a4a92-f0bd-4f51-9fd8-54e350a70a30&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -33,24 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lis/Desktop/next/starting-project/src/components&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/lis/Desktop/next/starting-project/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -58,6 +71,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +95,13 @@
       <workItem from="1739349784249" duration="28000" />
       <workItem from="1739349814061" duration="8754000" />
       <workItem from="1739451525204" duration="1124000" />
-      <workItem from="1739452660271" duration="4421000" />
+      <workItem from="1739452660271" duration="5027000" />
+      <workItem from="1739629151511" duration="136000" />
+      <workItem from="1739629295474" duration="125000" />
+      <workItem from="1739629543158" duration="2579000" />
+      <workItem from="1739632132159" duration="228000" />
+      <workItem from="1739632379112" duration="2000" />
+      <workItem from="1739632384724" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="Added buttons, refactored state in new post">
       <option name="closed" value="true" />
@@ -93,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739451594571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added simply server, useEffect &amp; changed saving to backend">
+      <option name="closed" value="true" />
+      <created>1739458116124</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739458116124</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +148,7 @@
     <MESSAGE value="Added buttons, refactored state in new post" />
     <MESSAGE value="added changing, saving posts to localStorage, fix errors" />
     <MESSAGE value="added simply server, useEffect &amp; changed saving to backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="added simply server, useEffect &amp; changed saving to backend" />
+    <MESSAGE value="added isLoading condition, state &amp; block" />
+    <option name="LAST_COMMIT_MESSAGE" value="added isLoading condition, state &amp; block" />
   </component>
 </project>

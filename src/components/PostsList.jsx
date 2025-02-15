@@ -8,28 +8,26 @@ import s from "./PostsList.module.css";
 const PostsList = ({modalIsVisible, onCloseModal}) => {
 
   const [posts, setPosts] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
 
 
   useEffect(() => {
-    // fetch('http://localhost:8080/posts')
-    //   .then( response =>  response.json() )
-    //   .then ( data => {
-    //     console.log(data)
-    //     setPosts(data.posts)
-    //   })
-    //   .catch( e => console.warn('Fetch error' ))
     (async function () {
       try {
+        setIsLoading(true)
         const response = await fetch('http://localhost:8080/posts')
-        if (!response.ok) throw new Error('We had not have response');
+        if (!response.ok) {
+          console.warn('We had not have response')
+        }
         const data = await response.json()
         setPosts(data?.posts)
       } catch (e) {
-        console.warn('Fetched from server failed', e.message)
+        console.warn('Fetched  from server failed', e.message)
+      } finally {
+        setIsLoading(false)
+
       }
-
     })()
-
   }, []);
 
   const onPostSubmit = (name, text) => {
@@ -47,17 +45,24 @@ const PostsList = ({modalIsVisible, onCloseModal}) => {
 
   return (<>
     {posts.length > 0 && <ul className={s.posts}>
+
       {posts.map(post => <Post
         author={post.author}
         body={post.body}
         key={post.id || post.body}
       />)}
-    </ul>}
+    </ul>
+    }
 
-    {posts.length === 0 && <>
+    {isLoading &&
+      <h2>Loading...</h2>
+    }
+
+    {!isLoading && posts.length === 0 && <>
       <h2>There are not posts yet </h2>
       <p>Start adding some!</p>
     </>}
+
     {modalIsVisible && <Modal onClose={onCloseModal}>
       <NewPost
         onCancel={onCloseModal}
