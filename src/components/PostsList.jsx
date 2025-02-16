@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from "react";
 import Post from "./Post";
-import NewPost from "./NewPost";
-import Modal from "./Modal";
 
 import s from "./PostsList.module.css";
 
-const PostsList = ({modalIsVisible, onCloseModal}) => {
+const PostsList = () => {
 
   const [posts, setPosts] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -63,12 +61,6 @@ const PostsList = ({modalIsVisible, onCloseModal}) => {
       <p>Start adding some!</p>
     </>}
 
-    {modalIsVisible && <Modal onClose={onCloseModal}>
-      <NewPost
-        onCancel={onCloseModal}
-        onPosted={onPostSubmit}
-      />
-    </Modal>}
   </>);
 };
 
