@@ -5,16 +5,25 @@ import Posts from './routes/Posts.jsx'
 import './index.css'
 import MainLayout from "./routes/MainLayout.jsx";
 import NewPost from "./routes/NewPost.jsx";
+import DemoPage1 from "./components/DemoPage1.jsx";
+import DemoPage2 from "./components/DemoPage2.jsx";
 
 const routes = createBrowserRouter([
   {
     path: '/', element: <MainLayout/>, children: [
       {
         path: '/', element: <Posts/>, children: [
-
-          {path: '/create-post', element: <NewPost/>},
+          {
+            path: '/create-post', element: <NewPost/>,
+          }
         ]
       },
+      {
+        path: '/demo1', element: <DemoPage1/>
+      },
+      {
+        path: '/demo2', element: <DemoPage2/>
+      }
     ]
   },
 ])

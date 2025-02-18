@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16bcec64-2bde-437f-ad96-f2e3b4d5e859" name="Changes" comment="added react-router, MainLayout">
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/MainFooter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer/MainFooter.module.css" afterDir="false" />
+    <list default="true" id="16bcec64-2bde-437f-ad96-f2e3b4d5e859" name="Changes" comment="added simply backend, refactored routes">
+      <change afterPath="$PROJECT_DIR$/src/components/DemoPage1.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DemoPage2.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/NewPost.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/NewPost.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostsList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/routes/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/MainLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainHeader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHeader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/NewPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/NewPost.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/NewPost.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/NewPost.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Posts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,26 +53,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lis/Desktop/next/starting-project/src/components/Footer&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/lis/Desktop/next/starting-project/src/components/Footer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Footer" />
@@ -116,7 +116,7 @@
       <workItem from="1739632379112" duration="2000" />
       <workItem from="1739632384724" duration="8141000" />
       <workItem from="1739723228674" duration="189000" />
-      <workItem from="1739726825901" duration="1766000" />
+      <workItem from="1739726825901" duration="11424000" />
     </task>
     <task id="LOCAL-00001" summary="Added buttons, refactored state in new post">
       <option name="closed" value="true" />
@@ -158,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739641821084</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added simply backend, refactored routes">
+      <option name="closed" value="true" />
+      <created>1739729706600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739729706600</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +189,7 @@
     <MESSAGE value="added simply server, useEffect &amp; changed saving to backend" />
     <MESSAGE value="added isLoading condition, state &amp; block" />
     <MESSAGE value="added react-router, MainLayout" />
-    <option name="LAST_COMMIT_MESSAGE" value="added react-router, MainLayout" />
+    <MESSAGE value="added simply backend, refactored routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added simply backend, refactored routes" />
   </component>
 </project>
